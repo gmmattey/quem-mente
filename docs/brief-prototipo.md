@@ -1,146 +1,131 @@
-# Quem Mente? — brief do protótipo
+# De Migué — brief do protótipo
 
-> Objetivo: desenhar um protótipo mobile-first que prove o jogo inteiro sem precisar explicar a ideia em reunião. Quem clicar deve entender, entrar numa sala e sentir a tensão da votação.
+> Objetivo: provar o jogo inteiro sem narrador humano. A pessoa entra, descobre o papel, dá pista, desconfia, vota e sente a revelação. A interface organiza a bagunça e sai da frente.
 
-## O que prototipar
+## 1. Fonte da verdade
 
-Não precisamos desenhar o universo inteiro. Precisamos provar a jornada principal.
+Antes de desenhar, ler nesta ordem:
 
-### Telas obrigatórias
+1. `docs/00-nome-canonico.md`
+2. `docs/documentacao-funcional.md`
+3. `docs/jornada-ux-ui.md`
+4. `docs/identidade-visual.md`
+5. `docs/regras-design-e-copy.md`
 
-1. Home
-2. Criar sala
-3. Entrar em sala
-4. Sala de espera
-5. Configuração da partida pelo dono
-6. Preparação da rodada
-7. Papel secreto — jogador comum
-8. Papel secreto — Mentiroso
-9. Digitar pista
-10. Pistas reveladas
-11. Discussão
-12. Votação
-13. Voto confirmado / aguardando outros
-14. Resultado da votação
-15. Revelação do Mentiroso
-16. Última chance do Mentiroso
-17. Resultado da rodada
-18. Ranking parcial
-19. Resultado final
-20. Card de compartilhamento
-21. Estado de reconexão
-22. Estado de jogador desconectado
+Se houver conflito visual, `regras-design-e-copy.md` prevalece.
 
-Não são 22 produtos diferentes. Várias dessas telas devem reaproveitar a mesma estrutura e mudar só o estado.
+## 2. Jornada principal
 
-## Jornada que precisa estar clicável
+**Home → Criar sala → Sala → Iniciar → Papel secreto → Pista → Pistas reveladas → Discussão → Votação → Revelação → Última chance, se houver → Pontuação → Próxima rodada → Resultado final → Revanche.**
 
-**Home → Criar sala → Sala de espera → Iniciar → Papel secreto → Pista → Discussão → Votação → Revelação → Pontuação → Nova rodada → Resultado final → Revanche.**
-
-Também precisa existir o caminho:
+Também precisa existir:
 
 **Home → Entrar em sala → Apelido → Sala.**
 
-## O que o protótipo precisa provar
+## 3. O que o protótipo precisa provar
 
-- a pessoa entende o jogo sem tutorial longo;
-- criar ou entrar numa sala é ridiculamente fácil;
-- o papel secreto parece realmente secreto;
-- ser escolhido como Mentiroso dá um micro “fodeu”;
-- votar em alguém é claro e difícil de fazer sem querer;
-- a revelação tem tensão;
-- o ranking não interrompe a brincadeira;
-- começar revanche leva no máximo dois toques.
+- conceito entendido sem tutorial longo;
+- criar/entrar em sala é ridiculamente fácil;
+- papel parece realmente secreto;
+- ser Mentiroso dá um micro “fodeu”;
+- pista é rápida de enviar;
+- discussão fica entre as pessoas, não dentro do app;
+- votar é claro e difícil de fazer por acidente;
+- revelação tem tensão;
+- revanche leva no máximo dois toques.
 
-## Direção visual
+## 4. Direção visual
 
-Usar `docs/identidade-visual.md` como fonte da verdade.
-
-Resumo:
+Usar:
 
 - base escura;
-- vermelho suspeita como cor principal;
-- amarelo para atenção/pista;
-- verde só em acerto/vitória;
-- Fredoka em títulos fortes;
-- Manrope na interface;
-- elementos gráficos de dúvida, olhos, cartas e “?”;
-- nada de mascote obrigatório.
+- vermelho `#F04444` para suspeita/acusação;
+- amarelo `#F6C445` para atenção/pista;
+- verde `#40C878` só em confirmação/vitória;
+- **Anybody** para impacto/revelação;
+- **Archivo** para interface;
+- olhares, papel escondido, voto, marcação, sobreposição e dúvida como repertório gráfico.
 
-## Mobile primeiro
+Não usar Pinóquio, nariz crescendo, mascote de malandro ou “personagem IA”.
 
-Artboard principal de referência: **390 × 844 px**.
+## 5. Regra anti-IA
 
-O layout precisa funcionar bem de 360 px para cima.
+Não entregar:
 
-Desktop é adaptação, não a origem do design.
+- card para cada frase;
+- bento grid;
+- glassmorphism;
+- degradê roxo/azul;
+- glow neon;
+- hero SaaS;
+- Inter/Manrope/Space Grotesk por inércia;
+- copy publicitária genérica;
+- personagem sorrindo só para preencher espaço.
 
-No celular:
+Espaço vazio é tensão. Não preencher por ansiedade.
 
-- CTA principal alcançável com polegar;
-- texto nunca microscópico;
+## 6. Mobile primeiro
+
+Artboard de referência: **390 × 844 px**.
+
+Precisa funcionar bem a partir de 360 px.
+
+- CTA principal perto do polegar;
 - alvos de toque grandes;
-- nada crítico colado nas bordas;
-- teclado não pode esconder o botão de enviar pista.
+- safe areas consideradas;
+- teclado não esconde campo/CTA;
+- desktop é adaptação, não origem.
 
-## Home
+## 7. Home
 
-Precisa vender o conceito sem parágrafo de marketing.
+Marca: **De Migué**.
 
-Marca grande.
+Frase curta possível:
 
-Frase curta sugerida:
-
-**“Tem alguém enrolando essa mesa.”**
+> “Tem alguém de migué nessa mesa.”
 
 CTAs:
 
-**Criar sala**
+- **Criar sala**
+- **Entrar em sala**
 
-**Entrar em sala**
+Secundário:
 
-Ação secundária:
+- **Como joga**
 
-**Como joga**
+Nada de landing page com três benefícios em cards.
 
-Pode existir uma pequena animação de olhos/ponto de interrogação, mas sem virar desenho animado.
-
-## Sala de espera
+## 8. Sala
 
 Mostrar:
 
-- código grande;
-- botão copiar;
-- compartilhar convite;
+- código;
+- copiar;
+- compartilhar;
 - participantes;
-- indicação clara de quem é o dono;
-- CTA do dono: **Começar partida**.
+- host;
+- configuração resumida;
+- CTA **Começar partida** para host.
 
-Quem não é dono vê algo como:
+Quem não é host pode ver algo na energia de:
 
-**“Esperando o Luiz começar essa porra.”**
+> “Esperando o Luiz começar essa porra.”
 
-A frase final pode ser suavizada na produção, mas a energia é essa.
+A versão final pode ajustar palavrão conforme contexto, mas não trocar por voz corporativa.
 
-## Papel secreto
+## 9. Papel secreto
 
-É uma das telas mais importantes.
+Proteção inicial:
 
-A pessoa deve primeiro ver uma proteção do tipo:
-
-**“Só você pode ver isso.”**
+**Só você pode ver isso.**
 
 CTA:
 
 **Ver meu papel**
 
-Depois:
-
 ### Comum
 
-Categoria discreta.
-
-Segredo enorme.
+Categoria discreta + segredo enorme.
 
 Exemplo:
 
@@ -160,205 +145,178 @@ Categoria:
 
 **LUGAR**
 
-Texto curto:
+Texto:
 
-**Finge que sabe e não entrega a cara.**
+**Finge que sabe.**
 
-## Pista
+O papel funcional continua chamado **Mentiroso**. Não forçar `Migué` como nome de papel só porque virou marca.
 
-Uma pergunta só:
+## 10. Pista
 
-**“Qual é a sua pista?”**
+Uma ação principal:
 
-Campo grande.
+**Manda tua pista.**
 
-Contador discreto.
-
-Cronômetro visível.
+Campo grande, contador discreto e cronômetro visível.
 
 CTA:
 
 **Mandar pista**
 
-Após envio:
+Depois:
 
-**“Agora sustenta essa história.”**
+**Agora sustenta essa história.**
 
-## Pistas reveladas
+## 11. Pistas reveladas
 
-Pistas aparecem em sequência, não todas de uma vez imediatamente.
+Pistas entram em sequência.
 
-Cada uma mostra:
+Cada pista mostra apenas o necessário:
 
-- avatar simples;
 - apelido;
-- pista.
+- pista;
+- identificação visual do jogador.
 
-A entrada pode ter pequena animação de carta.
+Não precisa de card pesado para cada uma se linha/ritmo resolverem.
 
-## Discussão
+## 12. Discussão
 
 A tela não tenta substituir a conversa.
 
-Mostrar:
+Mostrar pistas + cronômetro quando houver.
 
-- pistas visíveis;
-- cronômetro se ativado;
-- CTA ao fim: **Bora votar**.
+CTA ao final:
 
-Se não houver cronômetro, o dono pode avançar.
+**Bora votar**
 
-## Votação
+## 13. Votação
 
-Jogadores em grid/lista grande.
+Jogadores grandes e fáceis de tocar.
 
 Não mostrar o próprio jogador como opção.
 
-Ao selecionar alguém:
+Ao selecionar:
 
 **Acusar Marcelo**
 
-Depois de tocar, confirmação:
+Confirmação curta:
 
-**“Vai de Marcelo mesmo?”**
+**Vai de Marcelo mesmo?**
 
-CTAs:
+Ações:
 
-**Sim, acusa esse aí**
+- **Sim, acusa esse aí**
+- **Pensando melhor…**
 
-**Pensando melhor…**
+## 14. Espera
 
-## Espera da votação
-
-Mostrar progresso sem revelar voto:
+Mostrar progresso sem vazar voto:
 
 **4 de 6 já votaram.**
 
-Nada de indicar em quem votaram.
+Nunca mostrar contagem parcial por candidato.
 
-## Revelação
+## 15. Revelação
 
-Precisa ter ritmo:
+Ritmo sugerido:
 
 1. votos entram;
-2. mais votado ganha destaque;
+2. mais votado ganha foco;
 3. pausa curta;
-4. aparece se era ou não o Mentiroso;
+4. identidade real aparece;
 5. segredo é mostrado.
-
-Se erraram:
-
-**“Vocês acabaram de condenar um inocente.”**
 
 Se acertaram:
 
-**“Pegaram o safado.”**
+**Pegaram o safado.**
 
-## Última chance
+Se erraram:
+
+**Vocês condenaram um inocente.**
+
+## 16. Última chance
 
 Se o Mentiroso foi descoberto:
 
-**“Ainda dá pra estragar a festa.”**
+**Ainda dá pra estragar a festa.**
 
 Pergunta:
 
-**“Qual era o segredo?”**
-
-Campo/autocomplete simples.
+**Qual era o segredo?**
 
 15 segundos.
 
-## Resultado da rodada
+A avaliação da resposta é do backend, não da UI.
+
+## 17. Resultado
 
 Mostrar pontuação sem planilha.
 
-Uma lista simples de ganhos da rodada.
+Destaques possíveis:
 
-Destaques engraçados podem aparecer:
+- Mentiroso descoberto;
+- caiu no papo;
+- acertou o segredo mesmo ferrado;
+- acusou inocente com confiança demais.
 
-- “Mentiroso descoberto”;
-- “Caiu no papo”;
-- “Acertou o segredo mesmo ferrado”.
+## 18. Resultado final
 
-CTA:
+Campeão em destaque + ranking curto.
 
-**Próxima rodada**
+Estatísticas divertidas quando sustentadas pelos dados:
 
-## Resultado final
-
-Campeão grande.
-
-Pódio ou ranking curto.
-
-Estatísticas divertidas:
-
-- melhor caçador de Mentiroso;
+- melhor caçador;
 - melhor blefador;
-- pessoa mais acusada injustamente.
+- mais acusado injustamente.
 
 CTAs:
 
-**Revanche**
+- **Revanche**
+- **Compartilhar**
 
-**Compartilhar**
+## 19. Compartilhamento
 
-## Compartilhamento
+Criar pelo menos dois modelos:
 
-Criar pelo menos dois modelos de card:
+### Blefe
 
-### Resultado individual
-
-**“Enganei 5 pessoas e ninguém percebeu.”**
+> “Fiquei de migué a rodada inteira e ninguém percebeu.”
 
 ### Caos da sala
 
-**“Todo mundo acusou o Marcelo. O Mentiroso era o Pedro.”**
+> “Todo mundo acusou o Marcelo. O Mentiroso era o Pedro.”
 
-Logo pequena + CTA para jogar.
+Marca pequena, história grande.
 
-## Estados que não podem ser esquecidos
+## 20. Estados obrigatórios
 
 - sala cheia;
 - código inválido;
 - apelido repetido;
 - jogador reconectando;
 - jogador saiu;
-- dono mudou;
+- host mudou;
 - tempo acabou;
 - pista não enviada;
 - votação empatada;
-- nova votação;
-- partida cancelada porque Mentiroso desconectou.
+- segundo turno;
+- Mentiroso desconectou.
 
-Não precisa transformar cada estado num modal enorme.
+Não transformar cada estado em modal enorme.
 
-## Componentes reaproveitáveis
+## 21. Movimento obrigatório
 
-- botão principal;
-- botão secundário;
-- avatar;
-- jogador selecionável;
-- cronômetro;
-- badge de rodada;
-- card de pista;
-- toast;
-- modal de confirmação;
-- ranking curto;
-- barra de progresso dos jogadores.
+Simular:
 
-## Movimento obrigatório no protótipo
-
-Simular pelo menos:
-
-- virar papel secreto;
+- proteção/virada do papel;
 - entrada das pistas;
-- voto sendo registrado;
+- registro do voto;
 - sequência da revelação;
 - resultado final.
 
-Sem animação de apresentação da Pixar. Rápido e com propósito.
+Sem apresentação da Pixar entre fases.
 
-## O que NÃO desenhar agora
+## 22. O que não desenhar agora
 
 - loja;
 - assinatura;
@@ -372,20 +330,28 @@ Sem animação de apresentação da Pixar. Rápido e com propósito.
 - avatar personalizável;
 - painel administrativo.
 
-Tudo isso é masturbação de roadmap antes da primeira partida funcionar.
+## 23. Multiplataforma
 
-## Critério de aprovação
+O mesmo design precisa servir à base única que será entregue como:
 
-O protótipo está bom quando alguém que nunca ouviu falar no projeto consegue:
+- Web/PWA;
+- Android;
+- iOS.
 
-1. criar uma sala;
-2. entender o próprio papel;
-3. enviar pista;
+Não criar três UIs independentes. Adaptar safe areas, teclado, compartilhamento, back e integrações nativas quando necessário.
+
+## 24. Critério de aprovação
+
+Alguém que nunca viu o projeto consegue:
+
+1. criar/entrar na sala;
+2. entender o papel;
+3. mandar pista;
 4. votar;
 5. entender a revelação;
 6. saber quem ganhou;
 7. pedir revanche.
 
-Sem alguém do projeto sentado do lado explicando.
+Sem narrador humano.
 
-Se precisar de narrador humano, o protótipo ainda não resolveu o jogo.
+Se a mesa não ganhar aquele clima de “esse filho da puta tá de migué”, o protótipo ainda não resolveu **De Migué**.
