@@ -1,86 +1,95 @@
-# Quem Mente? — identidade visual
+# De Migué — identidade visual
 
-> O jogo é uma mesa de bar com suspeita no ar. A identidade precisa parecer divertida, esperta e meio sacana — não infantil, não sombria demais e muito menos “startup de IA com degradê roxo”.
+> O jogo é uma mesa de bar com suspeita no ar. A identidade precisa ser esperta, social e meio sacana — não infantil, não sombria demais e muito menos “startup de IA com degradê roxo”.
 
-## 1. Personalidade visual
+## 1. Personalidade
 
-O **Quem Mente?** precisa parecer:
+**De Migué** é:
 
 - desconfiado;
 - rápido;
 - social;
 - provocador;
 - ligeiramente caótico;
-- adulto o suficiente para não parecer jogo de criança.
+- adulto sem precisar virar +18;
+- brasileiro sem cair em caricatura.
 
-A sensação é de alguém olhando de canto e pensando: **“esse filho da puta tá mentindo.”**
+A sensação é de alguém olhando de canto e pensando:
 
-## 2. Ideia central da marca
+> “Esse aí tá de migué.”
 
-A marca gira em torno de **dúvida**.
+## 2. Ideia central
 
-O elemento principal não deve ser uma boca mentindo, um nariz de Pinóquio ou um bonequinho fazendo “shhh”. Isso é óbvio pra cacete.
+A marca gira em torno de **suspeita + fingimento + acusação**.
 
-A direção preferida é trabalhar com o próprio **ponto de interrogação** como elemento de suspeita.
+A identidade não deve usar automaticamente:
 
-### Símbolo sugerido
+- nariz de Pinóquio;
+- boca mentindo;
+- bonequinho fazendo “shhh”;
+- máscara de bandido;
+- malandro de chapéu;
+- mascote genérico.
 
-Um símbolo simples formado por:
+Isso explicaria demais e empobreceria o conceito.
 
-- dois olhos ou duas formas abstratas encarando;
-- um ponto de interrogação escondido no espaço negativo;
-- ou uma carta/placa levemente inclinada com “?” recortado.
+## 3. Símbolo
 
-Tem que funcionar sozinho em favicon, avatar, splash e botão de sala.
+Direções possíveis:
 
-Se precisar explicar o símbolo em três parágrafos, jogamos fora.
+- dois olhares que não se encaram direito;
+- uma forma incompleta/dupla;
+- carta ou papel com informação escondida;
+- marcação de voto;
+- uma forma que parece uma coisa de frente e outra quando girada;
+- `M` ou acento de `Migué` usado de forma sutil, sem monograma corporativo.
 
-## 3. Wordmark
+Precisa funcionar em favicon, ícone de app, splash, avatar e card compartilhável.
 
-**Quem Mente?** escrito com presença, sem seriedade demais.
+## 4. Wordmark
 
-A interrogação faz parte da marca. Não é pontuação opcional.
+Usar **De Migué** exatamente assim.
+
+O acento faz parte da grafia pública.
 
 Direção:
 
-- letras grossas;
-- cantos levemente arredondados;
+- presença;
 - pequenas irregularidades controladas;
-- possível inclinação ou deslocamento em “Mente?” para sugerir dúvida.
+- sensação de dúvida sem destruir legibilidade;
+- nada de fonte manuscrita ou “malandragem” caricata.
 
-Evitar fonte manuscrita. A gente quer conversa de bar, não convite de chá de bebê.
+## 5. Paleta inicial
 
-## 4. Paleta
-
-### Cor principal — vermelho suspeita
+### Vermelho suspeita
 
 `#F04444`
 
-É quente, chama atenção e combina com acusação sem cair no vermelho de erro bancário.
+Marca, acusação, tensão e revelação.
 
 ### Fundo escuro
 
 `#16151A`
 
-Serve como base principal em estados de jogo e cria tensão.
+Fases secretas e momentos de tensão.
 
 ### Fundo claro
 
 `#F7F3EC`
 
-Um bege quase papel, útil em home e áreas mais leves. Evita aquele branco hospitalar.
+Home, resultado e peças sociais quando fizer sentido.
 
 ### Amarelo pista
 
 `#F6C445`
 
-Para destaque, temporizador, informação suspeita e pequenas provocações.
+Atenção, pista e informação suspeita.
 
-### Verde acerto
+### Verde confirmação
 
 `#40C878`
 
-Só para confirmação e vitória. Não dominar a marca.
+Acerto/vitória, sem dominar a marca.
 
 ### Texto claro
 
@@ -90,250 +99,207 @@ Só para confirmação e vitória. Não dominar a marca.
 
 `#202027`
 
-## 5. Uso das cores
-
-A regra é simples:
-
-- vermelho é tensão, voto, acusação e marca;
-- amarelo é atenção, pista e “hmm…”;
-- verde é acerto/revelação positiva;
-- fundo escuro domina as fases secretas;
-- fundo claro pode aparecer na home, resultado e conteúdo compartilhável.
-
-Não usar cinco cores berrando ao mesmo tempo. Isso aqui é suspeita, não bloco de carnaval.
-
 ## 6. Tipografia
 
-### Títulos / marca
+Direção preferida:
 
-**Fredoka** em pesos fortes.
+- **Anybody** — títulos, revelações, palavras de impacto e papel secreto;
+- **Archivo** — interface, pistas, botões, apelidos e textos funcionais.
 
-Tem personalidade, é redonda sem ficar infantil demais e funciona bem em palavra grande na tela.
+Motivo:
 
-### Interface
+`Anybody` tem personalidade e variação sem ficar infantil. `Archivo` sustenta legibilidade social e densidade sem cara de dashboard.
 
-**Manrope**.
+Testar obrigatoriamente:
 
-Limpa, muito legível e não disputa atenção com a mecânica.
+- “VOCÊ É O MENTIROSO”;
+- “VOCÊ TÁ DE MIGUÉ” como possível provocação, sem substituir o papel funcional;
+- apelidos longos;
+- pistas de duas linhas;
+- votação em tela pequena;
+- cronômetro;
+- placar.
 
-### Regras
+Não cair automaticamente em Inter, Manrope, Space Grotesk, Poppins, DM Sans ou Sora.
 
-- títulos curtos e grandes;
-- frases de uma linha quando possível;
-- nunca apertar texto em card pequeno;
-- número de rodada, cronômetro e resultado com bastante peso visual.
+## 7. Hierarquia
 
-## 7. Formas
+Cada fase tem um protagonista:
 
-Nada de retângulo corporativo com sombra de dashboard.
+- papel;
+- pista;
+- discussão;
+- voto;
+- revelação.
 
-Usar:
+A interface não cria cinco cards iguais onde tudo parece igualmente importante.
 
-- blocos com cantos médios;
-- cartões levemente inclinados apenas quando isso ajudar a tensão;
-- círculos e formas ovais para jogadores/votos;
-- pequenas imperfeições visuais em elementos decorativos.
+## 8. Formas
 
-A interface principal continua organizada. O caos é tempero, não desculpa pra UX ruim.
+A linguagem pode nascer de:
 
-## 8. Ícones
+- olhar;
+- dúvida;
+- papel escondido;
+- carta;
+- rabisco;
+- acusação;
+- marca de voto;
+- seta;
+- sobreposição;
+- coisa parcialmente revelada.
 
-Ícones simples, grossos e diretos.
+Pequena irregularidade é bem-vinda. Bagunça sem motivo, não.
 
-Precisamos de poucos:
+## 9. Movimento
 
-- entrar;
-- criar sala;
-- compartilhar;
-- copiar código;
-- tempo;
-- votar;
-- revelar;
-- configurações;
-- som.
+Movimento reforça suspense.
 
-Evitar ilustração detalhada em ícone funcional.
+### Papel
 
-## 9. Avatar dos jogadores
+A informação pode virar/descobrir como uma carta.
 
-No MVP, nada de editor de personagem.
+### Pistas
 
-Cada jogador recebe automaticamente:
+Entram uma a uma com ritmo curto.
 
-- círculo com inicial do apelido;
-- uma cor de apoio sorteada;
-- opcionalmente um pequeno padrão geométrico.
+### Voto
 
-Isso já diferencia a mesa sem criar uma loja de cabelinho virtual antes de termos usuário.
-
-## 10. Movimento
-
-Movimento precisa reforçar suspense.
-
-### Papel secreto
-
-A informação entra como se uma carta tivesse sido virada.
-
-### Votação
-
-Os votos aparecem com pequenos impactos, um a um.
+Seleção tem impacto claro e confirmação.
 
 ### Revelação
 
-Breve pausa antes de mostrar o Mentiroso.
+- votos aparecem;
+- mais votado ganha foco;
+- pausa curta;
+- identidade real aparece;
+- segredo é revelado.
 
-Nada de esperar sete segundos olhando partícula voando. Suspense curto é tensão; suspense longo é lentidão.
+Suspense curto é tensão. Suspense longo é gente fechando o app.
 
-### Vitória
+## 10. Tom da interface
 
-Celebração rápida. Confete pode existir, mas pequeno e pontual.
+Parece conversa de quem está jogando.
 
-## 11. Som
+Boas direções:
 
-Som é opcional e desligável.
+- “Tem alguém de migué nessa mesa.”
+- “Só você pode ver isso.”
+- “VOCÊ É O MENTIROSO.”
+- “Finge que sabe.”
+- “Manda tua pista.”
+- “Agora sustenta essa história.”
+- “Vai de Marcelo mesmo?”
+- “Pegaram o safado.”
+- “Vocês acusaram a pessoa errada.”
+- “Mais uma?”
 
-Pode existir:
+A marca pode usar “de migué” com naturalidade, mas não repetir a expressão em toda tela até ficar insuportável.
 
-- clique seco ao votar;
-- pequeno “tic” no cronômetro final;
-- impacto na revelação;
-- efeito curto de vitória/fracasso.
+## 11. Papel secreto
 
-Não colocar narrador gritando no ouvido da pessoa no ônibus.
-
-## 12. Fotografia e ilustração
-
-O jogo não precisa depender de fotos.
-
-Ilustração, quando existir, deve ser simples e gráfica:
-
-- olhos;
-- sombras;
-- cartas;
-- balões;
-- sinais de dúvida;
-- setas e rabiscos curtos.
-
-Evitar mascote obrigatório no MVP. Se aparecer uma boa ideia depois, beleza. Não vamos inventar um “Mentirolfo” só porque app de jogo parece precisar de bichinho.
-
-## 13. Tom da interface
-
-A interface provoca, mas não humilha.
-
-Boas frases:
-
-- “Tem alguém enrolando essa mesa.”
-- “Escolhe bem. Depois não adianta chorar.”
-- “Todo mundo respondeu. Agora começa a fofoca.”
-- “Pegaram o Mentiroso.”
-- “Vocês acusaram a pessoa errada. Parabéns.”
-
-Evitar:
-
-- texto corporativo;
-- excesso de meme datado;
-- piada ofensiva com característica pessoal;
-- frase longa explicando o que o botão já deixa óbvio.
-
-## 14. Home
-
-A marca aparece grande.
-
-A home precisa ter no máximo três caminhos fortes:
-
-- **Criar sala**;
-- **Entrar em sala**;
-- **Como joga** como ação secundária.
-
-Um pequeno elemento animado de suspeita pode existir ao fundo, mas sem virar wallpaper de cassino.
-
-## 15. Papel secreto
-
-Essa é uma tela de identidade forte.
+É uma tela de identidade forte.
 
 ### Jogador comum
 
-Fundo escuro, categoria discreta e segredo enorme.
+Categoria discreta + segredo enorme.
 
 ### Mentiroso
 
-O vermelho entra com mais força.
+Vermelho ganha força.
 
-Texto central:
+Texto principal funcional:
 
 **VOCÊ É O MENTIROSO**
 
 Categoria abaixo.
 
-A pessoa precisa sentir um micro “fodeu” sem precisarmos escrever “fodeu”.
+A marca `De Migué` não muda o nome do papel do jogo. O papel continua **Mentiroso**, porque é mais claro para regra e acessibilidade.
 
-## 16. Votação
+## 12. Votação
 
-Lista/grid de jogadores grandes e fáceis de tocar.
+Jogadores grandes, fáceis de tocar e claramente selecionáveis.
 
-Selecionado recebe contorno forte e mudança clara de estado.
-
-CTA:
+CTA contextual:
 
 **Acusar [nome]**
 
-Antes do envio definitivo, confirmação curta. Voto é ação importante; toque acidental vai dar treta de verdade.
+Confirmação curta antes do voto final.
 
-## 17. Revelação
+Não transformar jogadores em mini cards de CRM.
 
-Momento mais teatral do jogo.
+## 13. Revelação
 
-Sequência:
+É o grande momento teatral.
 
-1. votos aparecem;
-2. pequena pausa;
-3. jogador escolhido ganha destaque;
-4. identidade real aparece;
-5. segredo é revelado.
+Se acertaram:
 
-Se pegaram o Mentiroso, vermelho pode virar verde/contraste de vitória.
+**“Pegaram o safado.”**
 
-Se erraram, a tela pode manter o vermelho e trazer a provocação.
+Se erraram:
 
-## 18. Cards compartilháveis
+**“Vocês condenaram um inocente.”**
 
-Devem funcionar fora do app.
+O reveal deve carregar tensão visual sem depender de sete segundos de partículas.
 
-Formato simples:
+## 14. Compartilhamento
 
-- logo pequena;
-- frase grande;
-- apelidos;
-- resultado;
-- CTA/link curto.
+Peças sociais precisam funcionar sozinhas.
 
-Exemplo:
+Exemplos:
 
-**“5 pessoas juraram que o Lucas estava mentindo. Não estava.”**
+- “Fiquei de migué a rodada inteira e ninguém percebeu.”
+- “Todo mundo acusou o Marcelo. O Mentiroso era o Pedro.”
+- “6 pessoas caíram no meu papo.”
 
-A pessoa deve entender o absurdo mesmo sem conhecer o jogo.
+Marca pequena, situação grande.
 
-## 19. O que jamais fazer
+## 15. Anti-IA visual
 
-- neon de cassino;
-- roxo/azul genérico de SaaS;
-- mascote infantil ocupando tudo;
-- UI cheia de vidro e blur porque alguém descobriu glassmorphism;
-- card dentro de card dentro de card;
+Evitar como solução automática:
+
+- bento grid;
+- glassmorphism;
+- blur gratuito;
+- degradê roxo/azul;
+- glow neon;
+- cards para tudo;
+- ícones em bolinhas coloridas;
+- hero SaaS;
+- mascote gerado por IA;
+- fonte escolhida por conveniência.
+
+A regra detalhada está em `docs/regras-design-e-copy.md`.
+
+## 16. Acessibilidade
+
+- voto não depende só de cor;
+- seleção tem contorno/estado claro;
+- pistas continuam legíveis em telas pequenas;
+- cronômetro não pode ser única indicação de tempo;
+- animações respeitam redução de movimento;
+- contraste forte nos estados secretos.
+
+## 17. O que jamais fazer
+
+- cassino neon;
+- caricatura de malandro brasileiro;
+- mascote infantil;
+- Pinóquio óbvio;
+- card dentro de card;
+- interface de banco com vermelho;
+- animação que atrasa a rodada;
 - dez cores de jogador brigando com a marca;
-- animação que atrasa rodada;
-- usar vermelho para absolutamente tudo.
+- copy de IA tentando parecer engraçada.
 
-## 20. Resumo da identidade
+## 18. Resumo
 
-**Quem Mente?** é vermelho, escuro, suspeito, social e um pouco safado.
+**De Migué** é suspeita, blefe, olhar torto e acusação entre amigos.
 
-A marca precisa dizer:
+A marca diz:
 
-> “Tem alguma coisa errada aqui.”
+> “Tem alguém de migué.”
 
-E a interface precisa responder:
+A interface faz o resto:
 
-> “Descobre quem foi.”
-
-Se parecer aplicativo financeiro com botão vermelho, voltamos pra mesa e redesenhamos essa porra.
+> “Descobre quem.”
