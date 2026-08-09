@@ -1,260 +1,214 @@
-# Quem Mente? — documentação funcional
+# De Migué — documentação funcional
 
-> Um jogo social de blefe, cara de pau e paranoia coletiva. A pessoa entra achando que vai responder uma coisinha simples e, cinco minutos depois, está acusando o melhor amigo de ser um mentiroso profissional.
+> Um jogo social de blefe, cara de pau e paranoia coletiva. Todo mundo sabe o segredo. Menos uma pessoa, que precisa fingir que sabe.
 
-## 1. O que é o jogo
+## 1. O que é
 
-**Quem Mente?** é um jogo multiplayer curto, pensado para jogar com amigos presencialmente ou à distância.
+**De Migué** é um jogo multiplayer curto para amigos, presencialmente ou à distância.
 
-A cada rodada, quase todo mundo recebe a mesma informação secreta. Uma pessoa recebe apenas uma pista incompleta e vira o **Mentiroso**.
+Quase todos os jogadores recebem o mesmo segredo.
 
-Quem sabe a resposta precisa provar que sabe sem falar demais. O Mentiroso precisa fingir que sabe sem se entregar.
+Uma pessoa é o **Mentiroso** e recebe apenas a categoria.
 
-Depois todo mundo vota em quem acha que está enrolando a mesa.
-
-É basicamente isso. E justamente por isso tem que funcionar bem pra cacete.
+Os comuns precisam dar pistas que provem que conhecem o segredo sem entregá-lo. O Mentiroso precisa blefar.
 
 ## 2. Objetivo
 
-### Para quem sabe o segredo
+### Jogadores comuns
 
-Descobrir quem é o Mentiroso sem entregar o segredo no processo.
-
-### Para o Mentiroso
-
-Sobreviver à votação fingindo que entendeu o assunto.
-
-Se for descoberto, ainda ganha uma última chance de ferrar todo mundo: tentar adivinhar o segredo.
-
-## 3. Quantidade de jogadores
-
-- mínimo: **3 jogadores**;
-- recomendado: **4 a 8 jogadores**;
-- máximo no MVP: **10 jogadores**.
-
-Com 3 funciona, mas fica mais óbvio. A partir de 4 começa a putaria psicológica de verdade.
-
-Não existe jogador controlado pelo sistema no MVP. É gente contra gente.
-
-## 4. Entrada na partida
-
-Uma pessoa cria a sala e vira o **Dono da Sala**.
-
-Ela escolhe:
-
-- quantidade de rodadas: 3, 5 ou 7;
-- pacote de temas;
-- tempo de resposta;
-- se a rodada terá discussão cronometrada ou livre.
-
-A sala gera:
-
-- código curto;
-- link compartilhável.
-
-Quem entra informa apenas um apelido.
-
-**Conta não é obrigatória.** Se obrigarmos cadastro antes da primeira partida, já começamos fazendo merda.
-
-## 5. Preparação da rodada
-
-Quando a partida começa, o sistema escolhe:
-
-1. um tema;
-2. um segredo;
-3. um jogador para ser o Mentiroso.
-
-Exemplo:
-
-- categoria: **Lugar**;
-- segredo: **Praia**.
-
-Os jogadores comuns recebem:
-
-> O segredo é: PRAIA
-
-O Mentiroso recebe:
-
-> Você é o Mentiroso.
-> Categoria: LUGAR
-
-Ele sabe o tipo da resposta, mas não sabe a resposta exata.
-
-Isso é importante: o Mentiroso precisa ter informação suficiente para blefar, mas não tanta a ponto de ficar fácil demais.
-
-## 6. Regra de ouro da pista
-
-Cada jogador precisa dar **uma pista curta** relacionada ao segredo.
-
-A pista não pode simplesmente revelar a resposta.
-
-Se o segredo for **Praia**, coisas como:
-
-- “areia”;
-- “mar”;
-- “guarda-sol”;
-
-são pistas óbvias demais e estragam a rodada.
-
-Pistas melhores seriam:
-
-- “eu evitaria meio-dia”;
-- “sempre volto com alguma coisa dentro da mochila”;
-- “depende muito do tempo”.
-
-O jogo deve estimular pista indireta, não resposta mastigada.
-
-## 7. Ordem das pistas
-
-O sistema sorteia a ordem dos jogadores a cada rodada.
-
-Cada jogador tem até **30 segundos** por padrão para registrar sua pista.
-
-No MVP, a pista é digitada no próprio celular.
-
-Quando todos respondem, as pistas são reveladas uma a uma, seguindo a ordem sorteada.
-
-O nome do autor aparece junto da pista.
-
-O Mentiroso participa normalmente.
-
-## 8. Discussão
-
-Depois da revelação, começa a fase de discussão.
-
-Aqui é onde a amizade acaba por alguns minutos.
-
-Os jogadores podem:
-
-- questionar pistas;
-- pedir explicação;
-- acusar;
-- mudar de ideia;
-- mentir descaradamente.
-
-O sistema não precisa mediar a conversa.
-
-No MVP, ele só mostra um cronômetro de **60 segundos** quando o modo cronometrado estiver ativado.
-
-Se o grupo estiver presencialmente ou em chamada de voz, a conversa acontece fora do app.
-
-## 9. Votação
-
-Quando a discussão termina, todos votam secretamente em quem acham que é o Mentiroso.
-
-Cada jogador pode votar em qualquer outra pessoa.
-
-O Mentiroso também vota. Claro que vota. Deixa o desgraçado plantar confusão.
-
-Depois que todos votam, o resultado aparece de uma vez.
-
-### Empate na votação
-
-Se houver empate entre dois ou mais jogadores:
-
-1. apenas os empatados continuam como opções;
-2. acontece uma votação rápida de desempate;
-3. quem está empatado não vota em si mesmo.
-
-Se houver novo empate, **ninguém é eliminado e o Mentiroso sobrevive à rodada**.
-
-O grupo teve duas chances e conseguiu fazer cagada nas duas. Problema deles.
-
-## 10. Revelação
-
-Depois da votação, o jogo revela:
-
-- quem era o Mentiroso;
-- qual era o segredo;
-- quem votou em quem.
-
-Se o Mentiroso **não foi o mais votado**, a rodada acaba ali e ele venceu.
-
-Se o Mentiroso foi descoberto, entra a última chance.
-
-## 11. Última chance do Mentiroso
-
-O Mentiroso recebe até **15 segundos** para tentar adivinhar o segredo.
-
-Ele escolhe ou digita uma resposta.
-
-Se acertar exatamente o segredo, ele rouba parte da vitória da rodada.
-
-Isso serve para impedir que os jogadores comuns deem pistas óbvias demais só para facilitar a votação.
-
-Quanto mais entregarem o assunto, maior a chance do Mentiroso virar o jogo.
-
-## 12. Pontuação
-
-A pontuação existe para criar disputa entre várias rodadas, mas não pode exigir calculadora de imposto de renda.
-
-### Jogador comum
-
-- votou corretamente no Mentiroso: **+100 pontos**;
-- o grupo descobriu o Mentiroso: **+50 pontos de bônus de equipe**;
-- votou errado: **0 ponto de votação**.
-
-Exemplo: quem acertou o Mentiroso numa rodada em que ele foi descoberto recebe 150 pontos.
+Descobrir quem é o Mentiroso sem entregar o segredo.
 
 ### Mentiroso
 
-- sobreviveu à votação: **+200 pontos**;
-- foi descoberto, mas acertou o segredo: **+150 pontos**;
-- foi descoberto e errou o segredo: **0 ponto**.
+Sobreviver à votação. Se for pego, ainda pode tentar adivinhar o segredo.
 
-### Por que o Mentiroso ganha mais?
+## 3. Jogadores
 
-Porque jogar sem saber a porra do assunto é mais difícil.
+- mínimo: 3;
+- recomendado: 4–8;
+- máximo MVP: 10;
+- sem bots no MVP.
 
-## 13. Escolha do Mentiroso
+## 4. Criação da sala
 
-O papel é sorteado pelo sistema, mas o sorteio precisa ser balanceado.
+O criador vira Host.
 
-Enquanto houver jogadores que ainda não foram Mentiroso naquela partida, o sistema deve evitar repetir alguém que já foi.
+Configurações:
 
-Não precisa garantir que todos sejam Mentiroso em partidas curtas, mas deve evitar que o mesmo infeliz pegue o papel três vezes seguidas.
+- 3, 5 ou 7 rodadas;
+- pacote/categorias;
+- tempo de pista;
+- discussão com tempo ou livre.
 
-## 14. Fim da partida
+Entrada por código/link.
 
-Depois da última rodada, o jogo mostra o ranking final.
+Apelido apenas. Sem login obrigatório.
 
-A tela apresenta:
+## 5. Distribuição do papel
+
+O sistema escolhe:
+
+- categoria;
+- segredo;
+- Mentiroso.
+
+### Jogador comum
+
+Vê:
+
+- categoria;
+- segredo.
+
+Exemplo:
+
+**Categoria:** Lugar  
+**Segredo:** Praia
+
+### Mentiroso
+
+Vê:
+
+- papel: Mentiroso;
+- categoria;
+- `secret = null`.
+
+Exemplo:
+
+**VOCÊ É O MENTIROSO**  
+**Categoria: LUGAR**
+
+O segredo nunca deve chegar ao cliente do Mentiroso antes da revelação.
+
+## 6. Pistas
+
+Cada jogador envia **uma pista curta e indireta**.
+
+A pista não pode ser o próprio segredo.
+
+A interface não precisa policiar semântica complexa no MVP, mas o conteúdo editorial pode registrar termos óbvios para playtest.
+
+## 7. Ordem das pistas
+
+Pistas aparecem em ordem aleatória.
+
+Padrão inicial: até 30 segundos por jogador para enviar.
+
+A pista só fica visível ao grupo quando a fase de revelação abrir.
+
+## 8. Discussão
+
+Depois das pistas, o grupo conversa.
+
+A discussão acontece fora do app — presencialmente ou em chamada externa.
+
+Modo inicial:
+
+- 60 segundos; ou
+- livre, avançado pelo Host.
+
+O app não precisa de chat, áudio ou vídeo.
+
+## 9. Votação
+
+Todos votam secretamente em quem acham que é o Mentiroso.
+
+O Mentiroso também vota.
+
+Não mostrar contagem parcial.
+
+Resultado aparece de uma vez.
+
+## 10. Empate
+
+### Primeiro empate
+
+Segundo turno apenas entre os empatados.
+
+### Segundo empate
+
+Ninguém é eliminado e o Mentiroso sobrevive à rodada.
+
+Nada de sorteio escondido.
+
+## 11. Revelação
+
+Após votação:
+
+- revelar mais votado;
+- revelar quem era o Mentiroso;
+- revelar o segredo;
+- mostrar votos;
+- resolver pontuação.
+
+Se o Mentiroso não foi o mais votado, ele vence a rodada.
+
+## 12. Última chance
+
+Se o Mentiroso foi descoberto:
+
+- recebe 15 segundos;
+- tenta adivinhar o segredo;
+- backend avalia a resposta.
+
+A UI nunca decide sozinha se a resposta está correta.
+
+## 13. Pontuação canônica
+
+### Jogadores comuns
+
+- votou corretamente no Mentiroso: **+100**;
+- grupo pegou o Mentiroso: **+50** de bônus coletivo;
+- voto errado: **0**.
+
+Quem votou certo e o grupo pegou o Mentiroso recebe **150 pontos** na rodada.
+
+### Mentiroso
+
+- sobreviveu à votação: **+200**;
+- foi descoberto e acertou o segredo: **+150**;
+- foi descoberto e errou: **0**.
+
+## 14. Escolha do Mentiroso
+
+Sorteio balanceado.
+
+Evitar repetir alguém enquanto outros ainda não foram Mentiroso quando possível.
+
+Nunca permitir a mesma pessoa como Mentiroso três vezes seguidas.
+
+## 15. Fim da partida
+
+Mostrar:
 
 - campeão;
-- pontuação de cada jogador;
-- quantas vezes cada um acertou o Mentiroso;
-- quantas rodadas cada um venceu como Mentiroso;
-- melhor blefe da partida, quando houver dado para isso;
-- CTA para revanche.
+- ranking;
+- pontos;
+- votos corretos no Mentiroso;
+- vitórias como Mentiroso;
+- destaques que os dados realmente sustentarem;
+- revanche;
+- compartilhar.
 
-### Empate no ranking
+## 16. Desempate final
 
-Critério:
-
-1. maior pontuação total;
-2. maior número de votos corretos;
-3. maior número de vitórias como Mentiroso;
+1. maior pontuação;
+2. mais votos corretos no Mentiroso;
+3. mais vitórias como Mentiroso;
 4. persistindo empate, vitória compartilhada.
 
-Nada de inventar desempate aleatório só porque alguém acha empate feio.
+## 17. Revanche
 
-## 15. Revanche
+Manter:
 
-O botão **Jogar de novo** mantém:
+- sala;
+- jogadores;
+- configurações.
 
-- a mesma sala;
-- os mesmos jogadores conectados;
-- as configurações anteriores.
+Trocar segredo e seleção de papel.
 
-Os temas e segredos devem ser renovados.
+Máximo de dois toques para recomeçar.
 
-A ideia é a pessoa terminar uma partida e começar outra em dois toques.
-
-## 16. Pacotes de temas
-
-O MVP deve começar com temas simples e universais.
-
-Sugestões:
+## 18. Categorias do MVP
 
 - lugares;
 - comidas;
@@ -264,152 +218,158 @@ Sugestões:
 - filmes e séries;
 - situações do dia a dia.
 
-Cada segredo precisa ter:
+Outras entram depois do playtest.
+
+## 19. Conteúdo
+
+Cada segredo deve ter:
 
 - categoria;
-- palavra principal;
-- nível de dificuldade;
-- pistas proibidas ou termos óbvios, quando necessário.
+- segredo;
+- dificuldade;
+- possíveis pistas óbvias para revisão editorial;
+- collision group quando houver conteúdo parecido;
+- status editorial.
 
-Não precisa de IA inventando tudo em tempo real no começo. Um banco de conteúdo bom vale mais que 10 mil respostas genéricas geradas automaticamente.
+Segredo bom permite pista indireta para quem sabe e blefe plausível para quem não sabe.
 
-## 17. Modos de jogo
+## 20. Dificuldade
 
-### Clássico — MVP
+### Fácil
 
-Um Mentiroso, um segredo e votação.
+Conhecido por quase todo mundo, várias pistas possíveis.
 
-Esse é o jogo de verdade e precisa funcionar redondo antes de inventar moda.
+### Médio
 
-### Caos — futuro
+Conhecido, mas exige mais cuidado.
 
-Dois Mentiroso na mesma rodada.
+### Difícil
 
-Eles não sabem quem é o outro.
+Ainda justo, porém com menos pistas naturais.
 
-Pode ser ótimo ou uma merda completa. Testamos depois.
+## 21. Desconexão
 
-### Casais / Amigos — futuro
+### Antes da distribuição
 
-Segredos e perguntas mais pessoais.
+Jogador pode ser removido normalmente.
 
-### +18 — futuro
+### Depois do início
 
-Pacote separado e explicitamente ativado.
+Esperar até 60 segundos para reconexão.
 
-Não entra no MVP.
+Se Mentiroso não volta, cancelar a rodada.
 
-## 18. Abandono e conexão ruim
+Se comum não volta, excluir da votação desde que ainda existam pelo menos 3 jogadores ativos.
 
-### Saiu antes de receber o papel
+Host pode ser transferido.
 
-O jogador é removido normalmente.
+## 22. Inatividade
 
-### Saiu depois do início da rodada
+Pista pode ter pequena tolerância adicional.
 
-O jogo aguarda até **60 segundos** por reconexão.
+Jogador inativo não ganha pontos da rodada.
 
-Se não voltar:
+Se o Mentiroso abandona/inativa de forma que a rodada não possa seguir, comuns vencem a rodada conforme regra de abandono definida na implementação.
 
-- a rodada é cancelada se ele for o Mentiroso;
-- se for jogador comum, ele fica fora da votação e a rodada continua se ainda houver pelo menos 3 participantes ativos.
+## 23. Nickname e moderação
 
-### Dono da Sala saiu
+No MVP:
 
-Outro jogador conectado assume automaticamente a função de dono.
+- filtro básico;
+- limite de tamanho;
+- escapar/sanitizar toda entrada;
+- sem perfil público persistente obrigatório.
 
-A partida não pode morrer porque o celular do anfitrião decidiu fazer merda.
+Relato/denúncia mais complexo pode vir depois conforme uso real.
 
-## 19. Jogador inativo
+## 24. Compartilhamento
 
-Se alguém não enviar pista dentro do tempo:
+Convite é parte central do produto.
 
-- recebe uma tolerância curta de 10 segundos;
-- depois é marcado como inativo na rodada;
-- não pontua naquela rodada.
+Após partida, compartilhar situações que façam sentido sozinhas:
 
-Se for o Mentiroso e ficar inativo, os jogadores comuns vencem a rodada.
+> “Fiquei de migué a rodada inteira e ninguém percebeu.”
 
-## 20. Conteúdo impróprio
+> “Todo mundo acusou o Marcelo. O Mentiroso era o Pedro.”
 
-Como jogadores podem escrever pistas e apelidos, deve existir:
+## 25. Monetização
 
-- limite de caracteres;
-- bloqueio básico de conteúdo abusivo em nomes públicos;
-- opção para denunciar jogador futuramente.
+### Grátis
 
-No MVP privado por sala, moderação pesada não é prioridade.
+- jogo principal;
+- salas;
+- categorias básicas;
+- compartilhamento.
 
-## 21. Compartilhamento
+### Publicidade
 
-Compartilhar não pode ser uma telinha esquecida no final.
+Somente entre partidas ou pausas naturais.
 
-A própria sala depende de convite.
+Nunca durante pista, discussão, voto ou reveal.
 
-O jogo deve gerar mensagens simples para WhatsApp e outros apps:
-
-> Tô numa sala de Quem Mente?. Entra aí e tenta não passar vergonha: [link]
-
-No resultado, deve ser possível compartilhar algo como:
-
-> Peguei 3 mentirosos e ainda enganei todo mundo em 2 rodadas. Quero ver você fazer melhor.
-
-Sem revelar respostas ou dados da partida de quem não autorizou.
-
-## 22. Monetização
-
-O jogo precisa ganhar dinheiro sem estragar a brincadeira.
-
-### Gratuito
-
-- criar sala;
-- entrar por link;
-- jogar modo Clássico;
-- temas básicos;
-- anúncios entre partidas ou após resultados.
-
-### Pago, no futuro
-
-Pode incluir:
+### Pago futuro
 
 - remover anúncios;
-- pacotes especiais de temas;
-- temas +18;
-- salas personalizadas;
-- estatísticas históricas;
-- criação de pacotes próprios.
+- packs de temas;
+- configurações extras;
+- salas especiais;
+- histórico/estatísticas;
+- conteúdo customizado quando seguro.
 
-**Anúncio no meio da rodada está proibido.** Quem meter vídeo de 30 segundos entre pista e votação merece ser expulso do projeto.
+Nunca vender vantagem competitiva.
 
-## 23. O que não entra no MVP
+## 26. Fora do MVP
 
-- chat próprio;
-- chamada de voz;
-- vídeo;
-- avatar 3D;
+- chat;
+- voz/vídeo;
 - clãs;
 - inventário;
-- loja de roupinha;
-- ranking mundial;
-- sistema de amigos complexo;
-- IA analisando microexpressão facial;
-- blockchain, pelo amor de Deus.
+- skins;
+- moeda virtual;
+- ranking mundial complexo;
+- sistema social pesado;
+- modo +18;
+- dois Mentiroso/Modo Caos;
+- IA gerando conteúdo em tempo real sem revisão.
 
-## 24. Jornada resumida
+## 27. Jornada resumida
 
-**Home → Criar/Entrar → Sala → Configurar → Distribuição secreta → Pistas → Discussão → Votação → Revelação → Última chance do Mentiroso → Pontuação → Próxima rodada → Ranking final → Revanche.**
+**Home → Criar/Entrar → Sala → Configurar → Papel secreto → Pista → Pistas reveladas → Discussão → Votação → Revelação → Última chance → Pontuação → Próxima rodada → Resultado final → Revanche.**
 
-Se esse fluxo começar a ganhar sete telas extras, alguém precisa perguntar por quê.
+## 28. Multiplataforma
 
-## 25. Quando o jogo está funcionando de verdade
+Uma base de código deve gerar:
 
-O jogo funciona quando:
+- Web/PWA;
+- Android;
+- iOS.
 
-- alguém entende o básico sem tutorial longo;
-- uma rodada leva poucos minutos;
-- o Mentiroso consegue blefar de verdade;
-- os jogadores discutem entre si, não com a interface;
-- perder gera vontade de revanche;
-- o link de convite traz outra pessoa para dentro sem cadastro chato.
+Regra, conteúdo e estado compartilhados. Diferenças de canal ficam em adapters conforme a fundação do Auê Games.
+
+## 29. Autoridade do backend
+
+O navegador não decide:
+
+- quem é Mentiroso;
+- qual é o segredo;
+- resultado da votação;
+- empate;
+- pontuação;
+- acerto da última chance;
+- avanço autoritativo de fase.
+
+Informação secreta nunca vai para quem não deve recebê-la.
+
+## 30. Quando está funcionando
+
+**De Migué** funciona quando:
+
+- a pessoa entende rápido;
+- o Mentiroso sente que tem chance de blefar;
+- os comuns não entregam o segredo sem querer;
+- a discussão acontece naturalmente;
+- a revelação gera reação;
+- o grupo pede revanche;
+- convidado depois vira Host.
 
 A tecnologia é só o garçom. A diversão acontece na mesa.
