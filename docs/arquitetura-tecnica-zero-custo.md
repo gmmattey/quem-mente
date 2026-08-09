@@ -20,7 +20,8 @@ O jogo depende mais de realtime que o Na Mosca, então aqui economia não signif
 ### Backend, banco e realtime
 
 - Supabase Free.
-- mesmo projeto Supabase compartilhado pelos jogos.
+- o projeto Supabase hoje identificado como **20T será reaproveitado como projeto compartilhado dos jogos**.
+- não criar um projeto Supabase novo para o Quem Mente?.
 - tudo deste jogo com prefixo `qm_`.
 - Supabase Auth com login anônimo.
 - Postgres.
@@ -71,11 +72,15 @@ Se tudo isso vier num JSON escondido e a UI só “não mostrar”, qualquer cur
 
 Portanto, informação secreta é entregue individualmente por RPC conforme a identidade autenticada.
 
-## 5. Supabase compartilhado
+## 5. Supabase compartilhado — o 20T vira a base dos jogos
 
-Usar um projeto lógico de jogos, por exemplo:
+O projeto Supabase 20T passa a ser a infraestrutura física compartilhada dos jogos.
+
+Nome lógico desejado para essa função:
 
 `buildea-games`
+
+Isso não significa criar outro projeto. Significa reaproveitar o Supabase existente do 20T e conectar os jogos a ele quando o desenvolvimento começar.
 
 Tabelas do Quem Mente?:
 
@@ -90,6 +95,25 @@ Tabelas do Quem Mente?:
 O Na Mosca usa `nm_`.
 
 Mesmo banco físico, regras e políticas separadas.
+
+### Antes de mexer no 20T
+
+A substituição é intencional, mas não é licença para sair apagando coisa na marra.
+
+Antes de qualquer limpeza, deve existir uma auditoria única do projeto Supabase 20T cobrindo:
+
+- tabelas;
+- funções/RPCs;
+- policies RLS;
+- Edge Functions;
+- Storage;
+- usuários Auth;
+- secrets e integrações;
+- dependências externas ainda apontando para o projeto.
+
+O que estiver comprovadamente sem uso pode ser removido por migration. O que ainda tiver dependência precisa ser resolvido antes.
+
+A meta é **reaproveitar o projeto 20T, não criar um terceiro Supabase e também não demolir nada no escuro**.
 
 ## 6. Identidade sem cadastro chato
 
@@ -351,6 +375,8 @@ Bater limite com salas reais cheias é um problema bom. Bater limite porque mand
 
 Schema e funções do Supabase vivem em migrations versionadas no Git.
 
+O vínculo via `supabase link` fica para quando o desenvolvimento começar. Nesse momento, tanto o Quem Mente? quanto o Na Mosca devem apontar para o **mesmo projeto Supabase reaproveitado do 20T**.
+
 Regra importante:
 
 - frontend pode evoluir rápido;
@@ -360,6 +386,6 @@ Regra importante:
 
 O jogo só precisa de três coisas técnicas para funcionar bem: segredo protegido, estado sincronizado e regra autoritativa.
 
-O resto é acessório.
+O projeto Supabase usado será o **20T reaproveitado como base compartilhada dos jogos**, não um projeto novo.
 
 Se conseguirmos isso com R$ 0 adicional, ganhamos o direito de descobrir se alguém quer jogar antes de descobrir se alguém quer nos cobrar.
